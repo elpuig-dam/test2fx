@@ -11,6 +11,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -31,6 +32,10 @@ public class MainWindow implements Initializable {
     TextField txtDada;
     @FXML
     AnchorPane anchorMain;
+    @FXML
+    WebView webView01;
+
+
 
 
     @Override
@@ -39,6 +44,8 @@ public class MainWindow implements Initializable {
         lsvLlista01.setItems(names);
         btn01.setStyle("-fx-background-radius: 15;");
         txtDada.setStyle("-fx-background-radius: 15");
+
+        webView01.getEngine().load("http://www.youtube.com/embed/mIgGCaIwdXU?autoplay=1");
 
     }
 
